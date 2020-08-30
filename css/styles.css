@@ -107,6 +107,28 @@ a {
   margin-left: auto;
 }
 
+.site-contact .item:nth-child(1)::before {
+  content: "";
+  display: inline-flex;
+  width: 16px;
+  height: 12px;
+  background-size: contain;
+  background-image: url(../images/envelope.svg);
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.site-contact .item:nth-child(2)::before {
+  content: "";
+  display: inline-flex;
+  width: 10px;
+  height: 16px;
+  background-size: contain;
+  background-image: url(../images/smartphone.svg);
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
 .site-contact .item + .item {
   margin-left: 50px;
 }
@@ -168,6 +190,35 @@ a {
   letter-spacing: 0.03em;
 }
 
+.list-advantages .item::before {
+  content: "";
+  display: inline-flex;
+  background-color: var(--secondary-button-color);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.list-advantages .item:nth-child(1)::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.list-advantages .item:nth-child(2)::before {
+  background-image: url(../images/clock.svg);
+}
+
+.list-advantages .item:nth-child(3)::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.list-advantages .item:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
+}
+
 .workout {
   display: flex;
 }
@@ -178,6 +229,19 @@ a {
 
 .hero {
   background-color: var(--secondary-bg-color);
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   text-align: center;
 }
 
@@ -206,7 +270,15 @@ a {
   margin-right: 30px;
 }
 
-.team .section-title {
+.team-members > .item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
+}
+
+.team-members .item .social-links {
+  display: flex;
 }
 
 .team h3 {
@@ -227,6 +299,17 @@ a {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.team .social-links .item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #green;
+
+  /* background-position: 50% 50%;
+  align-content: center; */
 }
 
 .filter {
