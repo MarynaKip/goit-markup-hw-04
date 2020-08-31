@@ -295,21 +295,32 @@ a {
 }
 
 .team p {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
+.team .social-links {
+  width: 206px;
+  height: 44px;
+  margin-right: 32px;
+  margin-left: 32px;
+}
 
-.team .social-links .item {
+.team .social-links .social-item {
   display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: #green;
+}
 
-  /* background-position: 50% 50%;
-  align-content: center; */
+.team .social-links .social-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .filter {
