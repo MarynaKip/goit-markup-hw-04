@@ -277,10 +277,6 @@ a {
   padding-bottom: 30px;
 }
 
-.team-members .item .social-links {
-  display: flex;
-}
-
 .team h3 {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -301,14 +297,15 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team .social-links {
+.social-links {
+  display: flex;
   width: 206px;
   height: 44px;
   margin-right: 32px;
   margin-left: 32px;
 }
 
-.team .social-links .social-item {
+.social-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -316,10 +313,9 @@ a {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #green;
 }
 
-.team .social-links .social-item:not(:last-child) {
+.social-item:not(:last-child) {
   margin-right: 10px;
 }
 .regular-customers .regular-customer-list {
@@ -439,6 +435,7 @@ footer {
 }
 
 .page-footer {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -453,4 +450,26 @@ footer {
 .address .link {
   color: var(--secondary-address-color);
   margin: 9px 0px;
+}
+
+.join {
+  margin-left: 70px;
+}
+
+.join-title {
+  margin-bottom: 20px;
+
+  color: var(--white-color);
+
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.join .social-item {
+  background-color: rgba(255, 255, 255, 0.1);
 }
