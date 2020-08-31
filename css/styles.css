@@ -322,6 +322,21 @@ a {
 .team .social-links .social-item:not(:last-child) {
   margin-right: 10px;
 }
+.regular-customers .regular-customer-list {
+  display: flex;
+  justify-content: space-between;
+  width: 1170;
+}
+
+.regular-customers-link {
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
 
 .filter {
   display: flex;
