@@ -103,11 +103,16 @@ a {
 }
 
 .site-contact {
-  display: flex;
+  display: inline-flex;
   margin-left: auto;
 }
 
-.site-contact .item:nth-child(1)::before {
+.site-contact .icon {
+
+  margin-right: 10px;
+}
+
+/* .site-contact .item:nth-child(1)::before {
   content: "";
   display: inline-flex;
   width: 16px;
@@ -126,11 +131,11 @@ a {
   background-size: contain;
   background-image: url(../images/smartphone.svg);
   background-repeat: no-repeat;
-  margin-right: 10px;
+  margin-right: 10px; */
 }
 
-.site-contact .item + .item {
-  margin-left: 50px;
+.site-contact .item:not(:last-child) {
+    margin-right: 50px;
 }
 
 .site-contact .link {
@@ -160,71 +165,6 @@ a {
 
 .section-title {
   color: var(--title-text-color);
-}
-
-.advantages .list-advantages {
-  display: flex;
-}
-
-.advantages .item {
-  width: calc((100% - (30px * 3)) / 4);
-}
-
-.advantages .item + .item {
-  margin-left: 30px;
-}
-
-.advantages .section-title {
-  display: inline-block;
-  margin-bottom: 10px;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-.advantages p {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
-.list-advantages .item::before {
-  content: "";
-  display: inline-flex;
-  background-color: var(--secondary-button-color);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-
-.list-advantages .item:nth-child(1)::before {
-  background-image: url(../images/antenna.svg);
-}
-
-.list-advantages .item:nth-child(2)::before {
-  background-image: url(../images/clock.svg);
-}
-
-.list-advantages .item:nth-child(3)::before {
-  background-image: url(../images/diagram.svg);
-}
-
-.list-advantages .item:nth-child(4)::before {
-  background-image: url(../images/astronaut.svg);
-}
-
-.workout {
-  display: flex;
-}
-
-.workout .item + .item {
-  margin-left: 30px;
 }
 
 .hero {
@@ -257,6 +197,84 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
+
+.advantages .list-advantages {
+  display: flex;
+}
+
+.advantages .item {
+  width: calc((100% - (30px * 3)) / 4);
+}
+
+.advantages .item + .item {
+  margin-left: 30px;
+}
+
+.advantages .section-title {
+  display: inline-block;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.advantages p {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.advantages-rectangle {
+  background-color: var(--secondary-button-color);
+  display: flex;
+  justify-content: center;
+   align-items: center;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+/* .list-advantages .item::before {
+  content: "";
+  display: inline-flex;
+  background-color: var(--secondary-button-color);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.list-advantages .item:nth-child(1)::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.list-advantages .item:nth-child(2)::before {
+  background-image: url(../images/clock.svg);
+}
+
+.list-advantages .item:nth-child(3)::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.list-advantages .item:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
+} */
+
+.workout {
+  display: flex;
+}
+
+.workout .item + .item {
+  margin-left: 30px;
+}
+
+
 
 .team {
   background-color: var(--secondary-button-color);
