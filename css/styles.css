@@ -289,6 +289,7 @@ a {
 }
 
 .team-members > .item {
+  background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -315,7 +316,7 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.social-links {
+.social-list {
   display: flex;
   width: 206px;
   height: 44px;
@@ -323,19 +324,34 @@ a {
   margin-left: 32px;
 }
 
-.social-item .link {
-  display: inline-flex;
+.social-link {
+  
+  display: flex;
   justify-content: center;
   align-items: center;
 
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  
+}
+
+.social-link .icon {
+  fill: #AFB1B8;  
+}
+
+.social-link:hover{
+background-color: var(--accent-color);
+}
+
+.social-link:hover .icon{
+fill: var(--white-color);
 }
 
 .social-item:not(:last-child) {
   margin-right: 10px;
 }
+
 .regular-customers .regular-customer-list {
   display: flex;
   justify-content: space-between;
@@ -511,12 +527,11 @@ footer {
   text-align: center;
 }
 
-.join .social-item .link {
+.join .social-item .social-link {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 
-/* .social-item .link:hover .social-item>.link {
+.join .social-item .social-link:hover {
   background-color: var(--accent-color);
-  
-} */
+}
