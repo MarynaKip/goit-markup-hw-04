@@ -134,7 +134,11 @@ a {
   margin-right: 10px; */
 }
 
-.site-contact .item:not(:last-child) {
+.site-contact .item {
+  display: inline;
+}
+
+.site-contact>.item:not(:last-child) {
     margin-right: 50px;
 }
 
@@ -145,6 +149,10 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.site-contact .link:hover .icon {
+  fill: var(--accent-color);
 }
 
 .nav-list .link.current,
@@ -196,6 +204,10 @@ a {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.advantages h2 {
+  display: none;
 }
 
 
