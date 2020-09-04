@@ -143,6 +143,9 @@ a {
 }
 
 .site-contact .link {
+display: flex;
+    align-items: center;
+
   color: var(--primary-text-color);
 
   font-weight: 500;
